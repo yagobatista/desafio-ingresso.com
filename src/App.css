@@ -1,38 +1,93 @@
 .App {
   text-align: center;
+  background-color: #333;
+  color: #fff;
+  height: 100%;
+  width: 100vw;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  background-color:  rgba(0, 0, 0, 0.8);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card .card-img {
+width: 100%;
+object-fit: cover;
+/* transition: transform .5s ease; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .card-img:hover {
+  transform: scale(1.5);
+} */
+/* .card .box-classification{
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 10px;
+} */
+.card .subtitle-box .subtitle {
+  font-size: 0.9em;
+  margin: 10px 5px 20px 5px;
+  text-align: start;
+}
+.card .subtitle-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.85) 100%);
+  margin: 0;
+  text-align: start;
+}
+
+.tag {
+  font-family: 'Proxima Nova';
+  background-color: #f90;
+  text-transform: uppercase;
+  color: #212121;
+  font-size: .6875rem;
+  vertical-align: middle;
+  padding: .35rem .5rem;
+  font-weight: 400;
+  margin: 0 5px;
+}
+
+.tag-category-culturais {
+  text-transform: uppercase;
+  background: #c3f
+}
+
+.tag-category-familia {
+  background: #3fc
+}
+
+.tag-premiere {
+  background: #ff3;
+  color: #333
+}
+
+.tag-spoiler {
+  color: #ff7300;
+  background-color: transparent;
+  border: 1px solid #ff7300;
+  font-size: .625rem
+}
+
+.tag-sponsor {
+  color: #999;
+  background-color: #252525;
+  border: 0;
+  font-size: .625rem
 }
